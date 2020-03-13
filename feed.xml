@@ -16,9 +16,9 @@ layout: null
     <title type="html">{{ site.title | smartify | xml_escape }}</title>
   {% endif %}
 
-  {% if site.name %}
+  <!-- {% if site.name %}
     <name type="html">{{ site.name | smartify | xml_escape }}</name>
-  {% endif %}  
+  {% endif %}   -->
 
   {% if site.description %}
     <subtitle>{{ site.description | xml_escape }}</subtitle>
