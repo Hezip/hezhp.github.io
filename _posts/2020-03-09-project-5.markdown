@@ -4,7 +4,7 @@ layout: default
 modal-id: 5
 date: 2020-03-09
 img: robocup/0.png
-img1: robocup/1.png
+img1: robocup/1.jpg
 img2: robocup/2.jpeg
 img3: 
 alt: image-alt
@@ -12,6 +12,11 @@ project-date: 2019
 client: Start Bootstrap
 category: Web Development
 description: >
-  Robocup Long live
-  
+  The Robocup rescue team has various specific tasks, such as map exploration, complex terrain driving, etc. In this scenario, the robot needs to go back and forth between the start point and the end point and score based on the number of times. The two main tasks are localization and bar detection.
+
+  For the bar detection, I tested two kinds of methods; one is based on the point cloud, whereas the other is based on RGB images. 
+
+  The point cloud based algorithm locates the bar by plane detection and sliding window filtering. The image-based algorithm finds the bar through color extraction and connected area detection.  The image-based algorithm balances performance and run time.
+
+  In terms of localization, our robot uses VINS for localization, but due to the lack of visual features in this particular scene, it is not stable enough. Here I use the state machine with the map information to assist in localization.
 ---

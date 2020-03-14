@@ -12,8 +12,10 @@ project-date: 2019
 client: Start Bootstrap
 category: Web Development
 description: >
-  In the RoboMaster AI Challenge, our team uses AMCL for global localization of the robot. However, such a scenario may occur in practice. When two robots collide, the position of the robot will change greatly. Since the map is Symmetrically, if the robot is hit near a symmetrical position, it may lead to incorrect localization (to a symmetrical position). This incorrect localization is particularly noticeable near the symmetry axis of the map. </br>
+  In the RoboMaster AI Challenge, our team uses AMCL for global localization of the robot. However, such a situation may occur in practice. When two robots collide, the position of the robot will change significantly. Since the map is symmetrical, if the robot is hit to a symmetrical position, it may lead to incorrect localization (to a symmetrical position). This incorrect localization is particularly noticeable near the symmetry axis of the map. </br>
 
-  We can solve this problem with the help of labels on the wall. In this model, we mainly use the Apriltag_ros which published by The APRIL Robotics Laboratory at the University of Michigan investigates Autonomy to detect the tag. There are two problems here. One is that the form of tag is different from apritag. The other is that we require high-precision tag detection. Under the premise of solving the above two problems, we determine whether a collision occurs by saving the position of the tag and re-comparing the position of the tag at each detection. When the collision occurs, the anchor point of AMCL will be reinitialized. We are currently experimenting with the feasibility of this algorithm in a gazebo simulation
+  We can solve this problem with the help of labels on the wall. In this model, we mainly use the Apriltag_ros published by The APRIL Robotics Laboratory at the University of Michigan to detect the tag. There are two problems here. One is that the form of tags is different from Apritag. The other is that we require high-precision tag detection. We encode the tags of this competition and increase the detection threshold according to the actual situation
+
+  Each time a new tag appears, the position in the world frame will be recorded, and the old tag will be compared with the recorded position. If the comparison shows that the position of the tag changes, it indicates that the robot's localization is wrong. The new pose is computed by the relative transform between tag and robot. And AMCL is initialized.
   
 ---

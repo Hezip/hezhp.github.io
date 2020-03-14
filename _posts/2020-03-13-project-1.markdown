@@ -3,7 +3,7 @@ name: Furniture Free Mapping use 3D Lidars
 layout: default
 modal-id: 1
 date: 2020-03-13
-img: furniture/00.png
+img: furniture/0.png
 img1: furniture/2.png
 img2: furniture/1.png
 img3: furniture/3.png

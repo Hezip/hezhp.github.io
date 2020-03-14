@@ -36,20 +36,20 @@ footer:
   copyright: MIT
   location: Location
   social: Around the Web
-  credits: Credits
+  credits: Version
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: 
   - title: facebook
     url:
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: 
   - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: 
   - title: github
-    url: http://github.com/jekyll
+    url: 
 
 # Postal address (add as many lines as necessary)
 address:
@@ -57,7 +57,7 @@ address:
   - line: Shanghai, China
 
 # Credits content
-CV: '<a href="http://startbootstrap.com">Personal CV</a>.'
+credits: Intern Edition
 
 # Build settings
 markdown: kramdown

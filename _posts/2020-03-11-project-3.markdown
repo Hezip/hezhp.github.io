@@ -12,6 +12,5 @@ project-date: 2019
 client: Start Bootstrap
 category: Web Development
 description: >
-  In this project, we used a DJI drone to carry lidar and cameras to mapping the swept terrain. 
-  
+  In this project, we use DJI's drone to carry the Lidar to collect data on terrain and building groups. In this way, we can establish a high-precision point cloud map. This point cloud map based on bird's-eye view can be used for a series of tasks such as urban planning and post-disaster reconstruction. The Lidar scan is far from the situation on the ground.  Since the viewpoint is downward, Lidar's field of view becomes smaller and can lead to rare local features. Such as there may be no geometric features on a flat roof. It leads to difficulties for point cloud matching and loop detection. For the first problem, we initialize the relative transformation between the two Lidar's scan by using GPS and the IMU pre-integration. The final transformation is computed by point matching between the scan and the map. At the same time, we compared a variety of point cloud matching algorithms such as GICP, NDT, VGIP, and FASTGICP. The GICP algorithm comes from point cloud library(PCL) works the best, but it is computational expensive. The FASTGICP (Kenji Koide et al.) can achieve a good balance between performance and run time. For the loop detection, we use interactive_slam to optimize the pose map, and the consistency of the entire map can be greatly improved after optimization. 
 ---
