@@ -1,0 +1,19 @@
+---
+name: RoboMaster AI Challenge --- Landmark Detection and Relocalization Model
+layout: default
+modal-id: 4
+date: 2020-03-10
+img: robomaster/0.png
+img1: robomaster/2.png
+img2: 
+img3:
+alt: image-alt
+project-date: 2019
+client: Start Bootstrap
+category: Web Development
+description: >
+  In the RoboMaster AI Challenge, our team uses AMCL for global localization of the robot. However, such a scenario may occur in practice. When two robots collide, the position of the robot will change greatly. Since the map is Symmetrically, if the robot is hit near a symmetrical position, it may lead to incorrect localization (to a symmetrical position). This incorrect localization is particularly noticeable near the symmetry axis of the map. </br>
+
+  We can solve this problem with the help of labels on the wall. In this model, we mainly use the Apriltag_ros which published by The APRIL Robotics Laboratory at the University of Michigan investigates Autonomy to detect the tag. There are two problems here. One is that the form of tag is different from apritag. The other is that we require high-precision tag detection. Under the premise of solving the above two problems, we determine whether a collision occurs by saving the position of the tag and re-comparing the position of the tag at each detection. When the collision occurs, the anchor point of AMCL will be reinitialized. We are currently experimenting with the feasibility of this algorithm in a gazebo simulation
+  
+---

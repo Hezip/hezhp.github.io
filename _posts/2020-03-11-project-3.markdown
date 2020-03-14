@@ -1,0 +1,17 @@
+---
+name: Lidar Terrain Mapping Based on UAV
+layout: default
+modal-id: 3
+date: 2020-03-11
+img: stereye/0.png
+img1: stereye/1.png
+img2: stereye/2.png
+img3: 
+alt: image-alt
+project-date: 2019
+client: Start Bootstrap
+category: Web Development
+description: >
+  In this project, we used a DJI drone to carry lidar and cameras to mapping the swept terrain. 
+  
+---

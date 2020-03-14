@@ -1,0 +1,26 @@
+---
+name: Hierarchical Topometric Representation of 3D Robotic Maps
+layout: default
+modal-id: 2
+date: 2020-03-12
+img: topometric/0.png
+img1: topometric/2.png
+img2: topometric/4.png
+img3: topometric/5.png
+alt: image-alt
+project-date: 2020
+client: Start Bootstrap
+category: Web Development
+description: >
+  In this paper, we propose a method for generating a hierarchical, volumetric topological map from
+  3D point clouds. There are four basic hierarchical levels in our map: <h8> building − storey − region − volume </h8> . The advantages of our method are reflected in both input and output. In terms of input, we accept multistorey point clouds and building structures with sloping roofs or ceilings. In terms of output, we can generate results with metric informations of different dimensionality, that are suitable for different robotics applications. </br>
+  
+  Given a point cloud of the whole building, the storey can be distinguished by our space divider as shown in bellow picture. 
+
+description1: >
+  Then on <h8> each storey </h8>, we take three steps to segment the environment. </br>
+  --- First, we transform the free space in the point cloud into columns. The length and width of the columns are the specified parameters. The height is adaptively determined according to the height of the free space in the environment.  </br>
+  --- Secondly, we apply the height-based merge method to combine columns with a similar height to regions.  </br>
+  --- In the last step, we segment the big region to get the complete topological graph by area graph segmentation, a 2D Voronoi segmentation method we proposed before.  </br>
+  The experiments show that our algorithm can fit most cases and get the result close to the 2D ground truth.
+---

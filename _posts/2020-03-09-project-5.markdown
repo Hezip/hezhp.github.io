@@ -1,0 +1,17 @@
+---
+name: Robocup
+layout: default
+modal-id: 5
+date: 2020-03-09
+img: robocup/0.png
+img1: robocup/1.png
+img2: robocup/2.jpeg
+img3: 
+alt: image-alt
+project-date: 2019
+client: Start Bootstrap
+category: Web Development
+description: >
+  Robocup Long live
+  
+---

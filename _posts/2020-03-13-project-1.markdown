@@ -1,0 +1,27 @@
+---
+name: Furniture Free Mapping use 3D Lidars
+layout: default
+modal-id: 1
+date: 2020-03-13
+img: furniture/00.png
+img1: furniture/2.png
+img2: furniture/1.png
+img3: furniture/3.png
+alt: image-alt
+project-date: 2019
+client: Start Bootstrap
+category: Web Development
+description: >
+  The goal of this project is to develop a framework that enables mobile robots to remove the furniture in a room and generate a furniture free map. There we encounter two main challenges: </br>
+  
+  <h8> --- </h8> In indoor environments, objects like furniture frequently occlude the wall surfaces, which puts more challenges on semantic segmentation. </br>
+  <h8> --- </h8> Many state-of-the-art methods are computationally too expensive to be deployed on a mobile robot. </br>
+
+  Our robot uses an orthogonal pair of Lidars. The horizontal scanner aims to estimate the robot position, whereas the vertical scanner generates the furniture free map. The pipepline is shown here. There are mainly three steps in our algorithm: point cloud rearrangement, wall plane detection and semantic labeling.
+
+
+description1: >
+  This is the 3D experiment in our mars lab. The experiment shows our algorithm can fit well on this kind of scenario. You can see there are some problem with the pillar. Because our wall plane detection method is based on the assumption that walls are planar and perpendicular to the ground. In some situation the pillar can not be detected as the wall. </br>
+
+  One main part of our result is the 2D grid map. The furniture free map with open doors can be used in area graph segmentation which we proposed before. We show several different 2D maps. Our algorithm can filter most of the furniture in the room. We observe that some doors are not open, even though they were classified as open in the 3D map. This error comes from the fact that sometimes we can not detect the door from both sides. This is something to improve in the future. 
+---

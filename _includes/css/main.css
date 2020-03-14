@@ -36,6 +36,19 @@ h6 {
     font-weight: 700;
 }
 
+h7 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;    
+    font-size: 2em;
+}
+
+h8 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;    
+    font-size: 1em;
+}
+
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -366,6 +379,10 @@ footer .footer-below {
     line-height: 45px;
 }
 
+.btn-default {
+    font-size: 50px;
+}
+
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -423,7 +440,7 @@ footer .footer-below {
     right: 25px;
     width: 75px;
     height: 75px;
-    background-color: transparent;
+    background-color: rgb(74, 156, 102);
     cursor: pointer;
 }
 
